@@ -1,0 +1,32 @@
+.nav-bar-customizada {
+    padding-right: 40px;
+
+    position: fixed;
+    z-index: 1;
+
+    width: 100vw;
+
+    -webkit-backdrop-filter: blur(10px); /* Safari 9+ */
+    backdrop-filter: blur(10px); /* Chrome and Opera */
+    background-color: rgba(255, 255, 255, 0.247);
+}
+
+.color-logo {
+    font-size: max(18px,2.5vw);
+    color: rgb(43, 226, 119) !important;
+}
+
+.color-link {
+    font-size: max(15px,2vw);
+    color: rgb(43, 226, 119) !important;
+}
+
+.color-button {
+    background-color: rgb(43, 226, 119);
+    color: white;
+}
+
+
+
+
+

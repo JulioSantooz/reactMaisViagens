@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Home from './pages/Home';
+import Destino from './pages/Destino';
+import Promocao from './pages/Promocao';
+import Contato from './pages/Contato';
+import Administrador from './pages/Administrador';
+import Cadastro from './pages/Cadastro';
+import Login from './pages/Login';
+import CadastroLogin from './pages/CadastroLogin'
 
 function App() {
+
+  const url = window.location.href;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {
+        url === 'http://localhost:3000/Home' 
+        ? <Home/>
+        : url === 'http://localhost:3000/Destino' 
+        ? <Destino/>
+        : url === 'http://localhost:3000/Promocao' 
+        ? <Promocao/>
+        : url === 'http://localhost:3000/Contato' 
+        ? <Contato/>
+        : url === 'http://localhost:3000/Cadastro' 
+        ? <Cadastro/>
+        : url === 'http://localhost:3000/Login' 
+        ? <Login/>
+        : url === 'http://localhost:3000/CadastroLogin' 
+        ? <CadastroLogin/>
+        : url === 'http://localhost:3000/Administrador' 
+        ? <Administrador/>
+        : <Home/>
+      }  
     </div>
   );
 }

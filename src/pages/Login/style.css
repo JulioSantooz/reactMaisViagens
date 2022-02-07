@@ -1,0 +1,12 @@
+.altura {
+    background-image: url('../../../public/images/foto-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+}
+
+.cor-secundaria {
+    background-color: rgb(43, 226, 119);
+}

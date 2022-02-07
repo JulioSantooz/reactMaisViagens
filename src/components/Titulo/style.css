@@ -1,0 +1,17 @@
+.img-fundo-titulo {
+    background-image: url('../../../public/images/foto-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 35vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fundo-titulo h1 {
+    color: white;
+}

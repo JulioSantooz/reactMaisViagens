@@ -1,0 +1,11 @@
+.text-lazy-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-lazy-loading h1{
+    color: rgb(43, 226, 119);
+    font-size: 40px;
+}
