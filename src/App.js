@@ -6,13 +6,15 @@ import Contato from './pages/Contato';
 import Administrador from './pages/Administrador';
 import Cadastro from './pages/Cadastro';
 import Login from './pages/Login';
-import CadastroLogin from './pages/CadastroLogin'
+import CadastroLogin from './pages/CadastroLogin';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
 
-  const url = window.location.href;
+  //const url = window.location.href;
 
   return (
+    /*
     <div>
       {
         url === 'http://localhost:3000/Home' 
@@ -34,6 +36,20 @@ function App() {
         : <Home/>
       }  
     </div>
+    */
+   <BrowserRouter>
+    <Routes>
+      <Route path="/Home" element={<Home/>}></Route>
+      <Route path="/Destino" element={<Destino/>}></Route>
+      <Route path="/Promocao" element={<Promocao/>}></Route>
+      <Route path="/Contato" element={<Contato/>}></Route>
+      <Route path="/Cadastro" element={<Cadastro/>}></Route>
+      <Route path="/Login" element={<Login/>}></Route>
+      <Route path="/CadastroLogin" element={<CadastroLogin/>}></Route>
+      <Route path="/Administrador" element={<Administrador/>}></Route>
+      <Route path="/" element={<Home/>}></Route>
+    </Routes>
+   </BrowserRouter>
   );
 }
 
